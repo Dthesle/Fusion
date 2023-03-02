@@ -1,0 +1,1731 @@
+
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+    <title>Fusion</title>
+    <meta name="keywords" content="educational games, fusion, math, educational">
+    <meta name="theme-color" content="#36393F">
+    <meta property="og:image:url" content="https://github.com/science246/science246.github.io/blob/gh-pages/project-assets/img/nabillogo.png?raw=true">
+    <meta property="og:image:secure_url" content="https://github.com/science246/science246.github.io/blob/gh-pages/project-assets/img/nabillogo.png?raw=true">
+    <meta name="description" content="Play games online for free, no block!">
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="shortcut-icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body {
+        font-family: sans-serif;
+        font-size: "25px";
+        color: #ffffff;
+        text-align: left;
+        background-color: #2e2e2e;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0%;
+        cursor: url("img/asterisk.png"), auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .glink {
+        height: 200px;
+        width: 200px;
+    }
+
+    .gapp {
+        background-color: #6b4c8b;
+        height: 200px;
+        width: 200px;
+        color: #ffffff;
+        border-radius: 40px;
+        transition: transform 250ms;
+        cursor: url("img/asterisk.png"), auto;
+        transition: 0.7s;
+        -webkit-filter: brightness(100%);
+    }
+
+    .gapp:hover {
+        box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+        transform: translateY(-15px);
+        cursor: url("img/asterisk.png"), auto;
+        -webkit-filter: brightness(70%);
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        transition: all .4s ease;
+    }
+
+    .gicon {
+        border-radius: 40px;
+        width: 200px;
+        height: 200px;
+        cursor: url("img/asterisk.png"), auto;
+    }
+
+    .gname {
+        font-size: 0.1px;
+        color: #ffffff;
+        text-align: center;
+        cursor: url("img/asterisk.png"), auto;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+        order: 0;
+        flex-grow: 0;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        cursor: url("img/asterisk.png"), auto;
+    }
+
+    .container {
+        padding: 9px;
+        cursor: url("img/asterisk.png"), auto;
+    }
+
+    p {
+        text-decoration: none;
+        font-size: 1.0em;
+        line-height: 1.0em;
+        color: #fff;
+        font-family: 'Chelsea Market', sans-serif;
+        text-align: center;
+    }
+
+    b {
+        color: #6b4c8b;
+        font-family: 'Chelsea Market', sans-serif;
+    }
+
+    i {
+        color: #6b4c8b;
+        font-family: 'Chelsea Market', sans-serif;
+    }
+
+    footer {
+        border-top: 1px solid #d5d5d5;
+        font-size: .8em;
+    }
+
+    ul.posts {
+        margin: 20px auto 40px;
+        font-size: 1em;
+    }
+
+    ul.posts li {
+        list-style: none;
+    }
+
+    h2 {
+        font-family: 'Chelsea Market', sans-serif;
+        color: #fff;
+    }
+
+    h1 {
+        font-family: 'Chelsea Market', sans-serif;
+        color: #fff;
+    }
+
+    h3 {
+        font-family: 'Chelsea Market', sans-serif;
+        color: #fff;
+    }
+
+    ul {
+        font-family: 'Chelsea Market', sans-serif;
+        color: #000;
+    }
+
+    li {
+        font-family: 'Chelsea Market', sans-serif;
+        color: #fff
+    }
+
+    h4 {
+        font-family: 'Chelsea Market', sans-serif;
+        color: #fff
+    }
+
+    a {
+        font-family: 'Chelsea Market', sans-serif;
+        color: #fff;
+    }
+
+    div {
+        font-family: 'Chelsea Market', sans-serif;
+        color: #fff
+    }
+
+    #g4g_search {
+        width: 15%;
+        text-align: center;
+        font-family: 'Chelsea Market', sans-serif;
+        font-size: 18px;
+        color: #fff;
+        padding: 7px;
+        border-radius: 20px;
+        border-color: #fff;
+        background-color: rgb(107, 76, 139);
+        opacity: 1;
+        outline: none;
+        cursor: url("img/asterisk.png"), auto;
+        transition: 0.5s;
+        font-style: italic;
+    }
+
+    #g4g_search:hover {
+        width: 30%;
+        text-align: center;
+        font-family: 'Chelsea Market', sans-serif;
+        font-size: 18px;
+        color: #fff;
+        padding: 7px;
+        border-radius: 20px;
+        border-color: #fff;
+        background-color: #584072;
+        outline: none;
+        cursor: url("img/asterisk.png"), auto;
+        font-style: italic;
+    }
+
+    ::placeholder {
+        color: #fff;
+        opacity: 0.2;
+    }
+
+    /* ===== Scrollbar CSS ===== */
+
+    /* Firefox */
+
+    * {
+        scrollbar-width: auto;
+        scrollbar-color: #6B4C8B #2e2e2e;
+    }
+
+    /* Chrome, Edge, and Safari */
+
+    *::-webkit-scrollbar {
+        width: 16px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: #2e2e2e;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background-color: #6B4C8B;
+        border-radius: 10px;
+        border: 3px solid #2e2e2e;
+    }
+
+    .navbar {
+        overflow: hidden;
+        background-color: #333;
+        cursor: url("img/asterisk.png"), auto;
+    }
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        cursor: url("img/asterisk.png"), auto;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: #6B4C8B;
+        box-shadow: inset 0 0 0 0 #6B4C8B;
+        transition: ease-out 0.3s;
+        cursor: url("img/asterisk.png"), auto;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #d3d3d3;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #6B4C8B;
+        color: #fff;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .btn {
+        position: relative;
+        width: 400px;
+        height: 100px;
+        background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        cursor: pointer;
+        border-radius: 100px;
+    }
+
+    .btn:before {
+        content: "";
+        position: absolute;
+        width: 390px;
+        height: 90px;
+        background-color: black;
+        top: 5px;
+        left: 5px;
+        border-radius: 100px;
+    }
+
+    .btn:after {
+        content: "visit my homie's site!";
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        font-family: 'Chelsea Market', sans-serif;
+        font-weight: 900;
+        font-size: 25px;
+        background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    @keyframes move {
+        to {
+            background-position: 2500vh;
+        }
+    }
+
+    .btn:hover {
+        animation: move 70s linear infinite;
+    }
+
+    .btn:hover:after {
+        animation: move 70s linear infinite;
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">home</a>
+        <a href="developer.html">dev</a>
+        <a href="projects.html">games</a>
+        <a href="gba.html">gameboy</a>
+        <a href="trending.html">most popular</a>
+        <a href="extra.html" style="float:right;">bookmarklets</a>
+        <a href="tos.html" style="float:right;">terms & license</a>
+    </div>
+    <br>
+    <br>
+    <div class="text-center">
+        <input type="text" class="text-center" id="g4g_search" placeholder="search4games.." onload="search_on()" onkeyup="search_on()" title="search" autofocus />
+    </div>
+    <script src="/js/search.js"></script>
+    <br>
+    <div id="search" class="flex-container">
+        <a href="projects/1/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/1/meta/apple-touch-icon.png" alt="icon" />
+                <h1 class="gname">1</h1>
+            </div>
+        </a>
+        <a href="projects/1v1space/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/1v1space/splash.png" alt="icon" />
+                <h1 class="gname">1v1 Space</h1>
+            </div>
+        </a>
+        <a href="projects/100ng/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/100ng/100ng.jpg" alt="icon" />
+                <h1 class="gname">100-Player Pong</h1>
+            </div>
+        </a>
+        <a href="projects/1v1lol/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/1v1lol/splash.png" alt="icon" />
+                <h1 class="gname">1v1.lol</h1>
+            </div>
+        </a>
+        <a href="projects/2048/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/2048/thumb.png" alt="icon" />
+                <h1 class="gname">2048</h1>
+            </div>
+        </a>
+        <a href="projects/9007199254740992/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/9007199254740992/logo-4.png" alt="icon" />
+                <h1 class="gname">9007199254740992</h1>
+            </div>
+        </a>
+        <a href="projects/99balls/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/99balls/99-balls-evo.jpg" alt="icon" />
+                <h1 class="gname">99 Balls</h1>
+            </div>
+        </a>
+        <a href="projects/ages-of-conflict/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/ages-of-conflict/splash.jpg" alt="icon" />
+                <h1 class="gname">Age of Conflict</h1>
+            </div>
+        </a>
+        <a href="projects/achievementunlocked/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/achievementunlocked/achievementunlocked.png" alt="icon" />
+                <h1 class="gname">Achievement Unlocked</h1>
+            </div>
+        </a>
+        <a href="projects/adrenalinechallenge/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/adrenalinechallenge/adrenalinechallenge.jpg" alt="icon" />
+                <h1 class="gname">Adrenaline Challenge</h1>
+            </div>
+        </a>
+        <a href="projects/alien-attack/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/alien-attack/icon-256.png" alt="icon" />
+                <h1 class="gname">Alien Attack</h1>
+            </div>
+        </a>
+        <a href="projects/alienhominid/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/alienhominid/alienhominid.jpg" alt="icon" />
+                <h1 class="gname">Alien Hominid</h1>
+            </div>
+        </a>
+        <a href="projects/among-us/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/among-us/red.png" alt="icon" />
+                <h1 class="gname">Among Us</h1>
+            </div>
+        </a>
+        <a href="projects/arena/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/arena/arena.png" alt="icon" />
+                <h1 class="gname">Arena</h1>
+            </div>
+        </a>
+        <a href="projects/avalanche/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/avalanche/avalanche.png" alt="icon" />
+                <h1 class="gname">Avalanche</h1>
+            </div>
+        </a>
+        <a href="projects/bad-ice-cream/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/bad-ice-cream/bad-ice-cream.png" alt="icon" />
+                <h1 class="gname">Bad Ice Cream</h1>
+            </div>
+        </a>
+        <a href="projects/bad-ice-cream-2/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/bad-ice-cream-2/bad-ice-cream-2.png" alt="icon" />
+                <h1 class="gname">Bad Ice Cream 2</h1>
+            </div>
+        </a>
+        <a href="projects/bad-ice-cream-3/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/bad-ice-cream-3/bad-ice-cream-3.png" alt="icon" />
+                <h1 class="gname">Bad Ice Cream 3</h1>
+            </div>
+        </a>
+        <a href="projects/backcountry/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/backcountry/image_2023-02-12_095839691.png" alt="icon" />
+                <h1 class="gname">Backcountry</h1>
+            </div>
+        </a>
+        <a href="projects/backrooms/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/backrooms/img/splash.jpg" alt="icon" />
+                <h1 class="gname">Backrooms</h1>
+            </div>
+        </a>
+        <a href="projects/basketball-stars/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/basketball-stars/assets/images/basketball-stars.png" alt="icon" />
+                <h1 class="gname">Basketball Stars</h1>
+            </div>
+        </a>
+        <a href="projects/basketbros-io/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/basketbros-io/thumb.jpg" alt="icon" />
+                <h1 class="gname">Basketbros.io</h1>
+            </div>
+        </a>
+        <a href="projects/balanceball/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/balanceball/image_2023-02-12_112814205.png" alt="icon" />
+                <h1 class="gname">Balance Ball</h1>
+            </div>
+        </a>
+        <a href="projects/ballistic-chickens/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/ballistic-chickens/logo.png" alt="icon" />
+                <h1 class="gname">Ballistic Chickens</h1>
+            </div>
+        </a>
+        <a href="projects/battleday/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/battleday/image_2023-02-12_113106437.png" alt="icon" />
+                <h1 class="gname">Battle Day</h1>
+            </div>
+        </a>
+        <a href="projects/battleforgondor/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/battleforgondor/3557.jpg" alt="icon" />
+                <h1 class="gname">Battle for Gondor</h1>
+            </div>
+        </a>
+        <a href="projects/bigredbutton/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/bigredbutton/bigredbutton.png" alt="icon" />
+                <h1 class="gname">Big Red Button</h1>
+            </div>
+        </a>
+        <a href="projects/bitlife/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/bitlife/logo.png" alt="icon" />
+                <h1 class="gname">Bitlife</h1>
+            </div>
+        </a>
+        <a href="projects/blackknight/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/blackknight/blackknight.png" alt="icon" />
+                <h1 class="gname">Black Knight</h1>
+            </div>
+        </a>
+        <a href="projects/bloonstd/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/bloonstd/bloonstd.jpg" alt="icon" />
+                <h1 class="gname">Bloons TD</h1>
+            </div>
+        </a>
+        <a href="projects/bloonstd2/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/bloonstd2/bloonstd2.png" alt="icon" />
+                <h1 class="gname">Bloons TD 2</h1>
+            </div>
+        </a>
+        <a href="projects/bloxors/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/bloxors/block.png" alt="icon" />
+                <h1 class="gname">Bloxors</h1>
+            </div>
+        </a>
+        <a href="projects/boxhead2play/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/boxhead2play/boxhead2play.jpg" alt="icon" />
+                <h1 class="gname">Box Head</h1>
+            </div>
+        </a>
+        <a href="projects/bravebird/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/bravebird/image_2023-02-12_113207089.png" alt="icon" />
+                <h1 class="gname">Brave Bird</h1>
+            </div>
+        </a>
+        <a href="projects/breakingthebank/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/breakingthebank/breakingthebank.png" alt="icon" />
+                <h1 class="gname">Breaking The Bank</h1>
+            </div>
+        </a>
+        <a href="projects/brokenhorn/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/brokenhorn/image_2023-02-12_113504972.png" alt="icon" />
+                <h1 class="gname">Broken Horn</h1>
+            </div>
+        </a>
+        <a href="projects/burritobison/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/burritobison/burritobison.png" alt="icon" />
+                <h1 class="gname">Burrito Bison</h1>
+            </div>
+        </a>
+        <a href="projects/camera/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/camera/android-chrome-512x512.png" alt="icon" />
+                <h1 class="gname">Camera</h1>
+            </div>
+        </a>
+        <a href="projects/cannon-basketball-4/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/cannon-basketball-4/img/splash.png" alt="icon" />
+                <h1 class="gname">Cannon Basketball 4</h1>
+            </div>
+        </a>
+        <a href="projects/canyondefense/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/canyondefense/canyondefense.png" alt="icon" />
+                <h1 class="gname">Canyon Defense</h1>
+            </div>
+        </a>
+        <a href="projects/catonfire/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/catonfire/image_2023-02-12_114657557.png" alt="icon" />
+                <h1 class="gname">Cat On Fire</h1>
+            </div>
+        </a>
+        <a href="projects/cell-machine/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/cell-machine/img/te9nDu.png" alt="icon" />
+                <h1 class="gname">Cell Machine</h1>
+            </div>
+        </a>
+        <a href="projects/craftmine/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/craftmine/images/craftmine.png" alt="icon" />
+                <h1 class="gname">CraftMine</h1>
+            </div>
+        </a>
+        <a href="projects/championarcher/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/championarcher/championarcher.png" alt="icon" />
+                <h1 class="gname">Champion Archer</h1>
+            </div>
+        </a>
+        <a href="https://chat-app-arzipl.vercel.app" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/chatapp/img.png" alt="icon" />
+                <h1 class="gname">ChatApp</h1>
+            </div>
+        </a>
+        <a href="projects/chess/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/chess/img/apple-touch-icon.png" alt="icon" />
+                <h1 class="gname">Chess</h1>
+            </div>
+        </a>
+        <a href="projects/chill-radio/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/chill-radio/img/icon.png" alt="icon" />
+                <h1 class="gname">Chill Radio</h1>
+            </div>
+        </a>
+        <a href="projects/chipman/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/chipman/image_2023-02-12_114557987.png" alt="icon" />
+                <h1 class="gname">Chipman</h1>
+            </div>
+        </a>
+        <a href="projects/chrome-dino/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/chrome-dino/icons/icon-256.png" alt="icon" />
+                <h1 class="gname">Chrome Dino</h1>
+            </div>
+        </a>
+        <a href="projects/circlo/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/circlo/img/download.png" alt="icon" />
+                <h1 class="gname">Circl0</h1>
+            </div>
+        </a>
+        <a href="projects/cookie-clicker/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/cookie-clicker/cclogo.png" alt="icon" />
+                <h1 class="gname">Cookie Clicker</h1>
+            </div>
+        </a>
+        <a href="projects/connect3/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/connect3/connect3.png" alt="icon" />
+                <h1 class="gname">Connect 3</h1>
+            </div>
+        </a>
+        <a href="projects/core-ball/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/core-ball/pr_source.png" alt="icon" />
+                <h1 class="gname">Core Ball</h1>
+            </div>
+        </a>
+        <a href="projects/sk8/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/sk8/cosmos.png" alt="icon" />
+                <h1 class="gname">Cosmo's Street</h1>
+            </div>
+        </a>
+        <a href="projects/creativekillchamber/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/creativekillchamber/image_2023-02-12_093856634.png" alt="icon" />
+                <h1 class="gname">Creative Kill Chamber</h1>
+            </div>
+        </a>
+        <a href="projects/crossyroad/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/crossyroad/sprites/chicken.png" alt="icon" />
+                <h1 class="gname">Crossy Road</h1>
+            </div>
+        </a>
+        <a href="projects/csgo-clicker/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/csgo-clicker/images/vanguard.png" alt="icon" />
+                <h1 class="gname">CS:GO Clicker</h1>
+            </div>
+        </a>
+        <a href="projects/ctr/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/ctr/logo.png" alt="icon" />
+                <h1 class="gname">Cut The Rope</h1>
+            </div>
+        </a>
+        <a href="projects/cubefield/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/cubefield/assets/unnamed.png" alt="icon" />
+                <h1 class="gname">Cubefield</h1>
+            </div>
+        </a>
+        <a href="projects/cubefield/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/cubeninja/icon-256.png" alt="icon" />
+                <h1 class="gname">Cube Ninja</h1>
+            </div>
+        </a>
+        <a href="projects/cupcake2048/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/cupcake2048/favicon.png" alt="icon" />
+                <h1 class="gname">Cupcake 2048</h1>
+            </div>
+        </a>
+        <a href="projects/dante/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/dante/splash.png" alt="icon" />
+                <h1 class="gname">Dante</h1>
+            </div>
+        </a>
+        <a href="projects/dealornodeal/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/dealornodeal/index.jpg" alt="icon" />
+                <h1 class="gname">Deal or No Deal</h1>
+            </div>
+        </a>
+        <a href="projects/death-run-3d/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/death-run-3d/img/death.png" alt="icon" />
+                <h1 class="gname">Death Run 3D</h1>
+            </div>
+        </a>
+        <a href="projects/deathsoul/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/deathsoul/image_2023-02-12_114335108.png" alt="icon" />
+                <h1 class="gname">Death Soul</h1>
+            </div>
+        </a>
+        <a href="projects/defend-the-tank/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/defend-the-tank/images/splash.jpg" alt="icon" />
+                <h1 class="gname">Defend The Tank</h1>
+            </div>
+        </a>
+        <a href="projects/doge2048/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/doge2048/meta/apple-touch-icon.png" alt="icon" />
+                <h1 class="gname">Doge 2048</h1>
+            </div>
+        </a>
+        <a href="projects/DogeMiner/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/DogeMiner/img/dogeminer_300x300.png" alt="icon" />
+                <h1 class="gname">Doge Miner</h1>
+            </div>
+        </a>
+        <a href="projects/doodle-jump/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/doodle-jump/doodle.png" alt="icon" />
+                <h1 class="gname">Doodle Jump</h1>
+            </div>
+        </a>
+        <a href="projects/draw-the-hill/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/draw-the-hill/icons/icon-512.png" alt="icon" />
+                <h1 class="gname">Draw the Hill</h1>
+            </div>
+        </a>
+        <a href="projects/drive-mad/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/drive-mad/logo.jpg" alt="icon" />
+                <h1 class="gname">Drive Mad</h1>
+            </div>
+        </a>
+        <a href="projects/ducklife1/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/ducklife1/image_2023-02-12_094359428.png" alt="icon" />
+                <h1 class="gname">Duck Life</h1>
+            </div>
+        </a>
+        <a href="projects/ducklife2/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/ducklife2/ducklife2.png" alt="icon" />
+                <h1 class="gname">Duck Life 2</h1>
+            </div>
+        </a>
+        <a href="projects/ducklife3/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/ducklife3/ducklife3.png" alt="icon" />
+                <h1 class="gname">Duck Life 3</h1>
+            </div>
+        </a>
+        <a href="projects/eaglercraft15/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/eaglercraft15/splash.jpeg" alt="icon" />
+                <h1 class="gname">Eaglercraft 1.5</h1>
+            </div>
+        </a>
+        <a href="projects/eagler/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/eagler/splash.png" alt="icon" />
+                <h1 class="gname">Eaglercraft 1.8</h1>
+            </div>
+        </a>
+        <a href="projects/edgenotfound/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/edgenotfound/edge.png" alt="icon" />
+                <h1 class="gname">Edge Not Found</h1>
+            </div>
+        </a>
+        <a href="projects/elasticman/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/elasticman/elasticman.jpg" alt="icon" />
+                <h1 class="gname">Elastic Man</h1>
+            </div>
+        </a>
+        <a href="projects/endlesswar3/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/endlesswar3/endlesswar3.png" alt="icon" />
+                <h1 class="gname">Endless War 3</h1>
+            </div>
+        </a>
+        <a href="projects/evil-glitch/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/evil-glitch/evil.png" alt="icon" />
+                <h1 class="gname">Evil Glitch</h1>
+            </div>
+        </a>
+        <a href="projects/exo/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/exo/img/small.jpg" alt="icon" />
+                <h1 class="gname">Exo</h1>
+            </div>
+        </a>
+        <a href="projects/fancypantsadventures/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/fancypantsadventures/fancypantsadventure.png" alt="icon" />
+                <h1 class="gname">Fancy Pants Adventures</h1>
+            </div>
+        </a>
+        <a href="projects/factoryballs/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/factoryballs/images/splash.png" alt="icon" />
+                <h1 class="gname">Factory Balls Forever</h1>
+            </div>
+        </a>
+        <a href="projects/fake-virus/icon.png" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/fake-virus/icon.png" alt="icon" />
+                <h1 class="gname">Fake Virus</h1>
+            </div>
+        </a>
+        <a href="projects/fnaw/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/fnaw/splash.png" alt="icon" />
+                <h1 class="gname">Five Nights at Winstons</h1>
+            </div>
+        </a>
+        <a href="projects/frying-nemo/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/frying-nemo/splash.png" alt="icon" />
+                <h1 class="gname">Frying Nemo</h1>
+            </div>
+        </a>
+        <a href="projects/fruitninja/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/fruitninja/FruitNinjaTeaser.jpg" alt="icon" />
+                <h1 class="gname">Fruit Ninja</h1>
+            </div>
+        </a>
+        <a href="projects/froggys-battle/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/froggys-battle/splash.png" alt="icon" />
+                <h1 class="gname">Froggy's Battle</h1>
+            </div>
+        </a>
+        <a href="projects/fireboy-and-watergirl-1/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/fireboy-and-watergirl-1/fb1.png" alt="icon" />
+                <h1 class="gname">Fireboy & Watergirl: 1</h1>
+            </div>
+        </a>
+        <a href="projects/fireboy-and-watergirl-2/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/fireboy-and-watergirl-2/fb2.png" alt="icon" />
+                <h1 class="gname">Fireboy & Watergirl: 2</h1>
+            </div>
+        </a>
+        <a href="projects/fireboy-and-watergirl-3/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/fireboy-and-watergirl-3/fb3.png" alt="icon" />
+                <h1 class="gname">Fireboy & Watergirl: 3</h1>
+            </div>
+        </a>
+        <a href="projects/fireboy-and-watergirl-4/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/fireboy-and-watergirl-4/fb4.png" alt="icon" />
+                <h1 class="gname">Fireboy & Watergirl: 4</h1>
+            </div>
+        </a>
+        <a href="projects/flappy-bird/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/flappy-bird/assets/thumb.png" alt="icon" />
+                <h1 class="gname">Flappy Bird</h1>
+            </div>
+        </a>
+                <a href="projects/flappy-plane/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/flappy-plane/flappyplane.png" alt="icon" />
+                <h1 class="gname">Flappy Plane</h1>
+            </div>
+        </a>
+        <a href="projects/flashtetris/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/flashtetris/flashtetris.png" alt="icon" />
+                <h1 class="gname">Flash Tetris</h1>
+            </div>
+        </a>
+        <a href="projects/flowfree/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/flowfree/ff.png" alt="icon" />
+                <h1 class="gname">Flow Free</h1>
+            </div>
+        </a>
+        <a href="projects/game-inside/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/game-inside/img/display.png" alt="icon" />
+                <h1 class="gname">Game Inside a Game</h1>
+            </div>
+        </a>
+        <a href="projects/geodash/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/geodash/geoscratchicon.png" alt="icon" />
+                <h1 class="gname">Geometry Dash</h1>
+            </div>
+        </a>
+        <a href="projects/getaway-shootout/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/getaway-shootout/img/images.jpg" alt="icon" />
+                <h1 class="gname">Getaway Shootout</h1>
+            </div>
+        </a>
+        <a href="projects/gimme-the-airpod/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/gimme-the-airpod/img/logo.png" alt="icon" />
+                <h1 class="gname">Gimme the Airpod</h1>
+            </div>
+        </a>
+        <a href="projects/glass-city/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/glass-city/image.png" alt="icon" />
+                <h1 class="gname">Glass City</h1>
+            </div>
+        </a>
+        <a href="projects/gravity-soccer/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/gravity-soccer/splash.png" alt="icon" />
+                <h1 class="gname">Gravity Soccer</h1>
+            </div>
+        </a>
+        <a href="projects/goodnight/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/goodnight/goodnight.jpg" alt="icon" />
+                <h1 class="gname">Goodnight</h1>
+            </div>
+        </a>
+        <a href="projects/go-ball/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/go-ball/game.jpg" alt="icon" />
+                <h1 class="gname">Go Ball</h1>
+            </div>
+        </a>
+        <a href="projects/google-feud/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/google-feud/splash.png" alt="icon" />
+                <h1 class="gname">Google Feud</h1>
+            </div>
+        </a>
+        <a href="projects/google-snake/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/google-snake/img/snake.png" alt="icon" />
+                <h1 class="gname">Google Snake</h1>
+            </div>
+        </a>
+        <a href="projects/champion-island/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/champion-island/splash.png" alt="icon" />
+                <h1 class="gname">Google Champion</h1>
+            </div>
+        </a>
+        <a href="projects/grindcraft/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/grindcraft/img/splash.png" alt="icon" />
+                <h1 class="gname">Grind Craft</h1>
+            </div>
+        </a>
+        <a href="projects/hackertype/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/hackertype/logo192.png" alt="icon" />
+                <h1 class="gname">Hacker Typer</h1>
+            </div>
+        </a>
+        <a href="projects/handshakes/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/handshakes/splaher.png" alt="icon" />
+                <h1 class="gname">Handshakes</h1>
+            </div>
+        </a>
+        <a href="projects/happywheels/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/happywheels/hw.png" alt="icon" />
+                <h1 class="gname">Happy Wheels</h1>
+            </div>
+        </a>
+        <a href="projects/hba/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/hba/hoverbotarena.jpg" alt="icon" />
+                <h1 class="gname">Hover Bot Arena</h1>
+            </div>
+        </a>
+        <a href="projects/helicopter/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/helicopter/helicopter.png" alt="icon" />
+                <h1 class="gname">Helicopter</h1>
+            </div>
+        </a>
+        <a href="projects/hexempire/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/hexempire/hexempire.jpg" alt="icon" />
+                <h1 class="gname">Hex Empire</h1>
+            </div>
+        </a>
+        <a href="projects/hextris/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/hextris/images/hextris-logo.png" alt="icon" />
+                <h1 class="gname">Hextris</h1>
+            </div>
+        </a>
+                <a href="projects/hobo/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/hobo/hobo.png" alt="icon" />
+                <h1 class="gname">Hobo</h1>
+            </div>
+        </a>
+                <a href="projects/hobo2/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/hobo2/hobo2.png" alt="icon" />
+                <h1 class="gname">Hobo 2: Prison Brawl</h1>
+            </div>
+        </a>
+        <a href="projects/html-viewer/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/html-viewer/html.png" alt="icon" />
+                <h1 class="gname">HTML Viewer</h1>
+            </div>
+        </a>
+        <a href="projects/icy2/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/icy2/icy2.jpg" alt="icon" />
+                <h1 class="gname">Icy Purple Head 2</h1>
+            </div>
+        </a>
+        <a href="projects/icy3/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/icy3/icy3.png" alt="icon" />
+                <h1 class="gname">Icy Purple Head 3</h1>
+            </div>
+        </a>
+        <a href="projects/txt/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/txt/img2txt.png" alt="icon" />
+                <h1 class="gname">Image To ASCII</h1>
+            </div>
+        </a>
+        <a href="projects/impossiblequiz/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/impossiblequiz/impossiblequiz.png" alt="icon" />
+                <h1 class="gname">Impossible Quiz</h1>
+            </div>
+        </a>
+        <a href="projects/interactivebuddy/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/interactivebuddy/interactivebuddy.jpg" alt="icon" />
+                <h1 class="gname">Interactive Buddy</h1>
+            </div>
+        </a>
+        <a href="projects/javaracer/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/javaracer/javaracer.png" alt="icon" />
+                <h1 class="gname">Java Racer</h1>
+            </div>
+        </a>
+        <a href="projects/jspaint/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/jspaint/jspaint.png" alt="icon" />
+                <h1 class="gname">JSPaint</h1>
+            </div>
+        </a>
+        <a href="projects/just-fall/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/just-fall/unnamed.png" alt="icon" />
+                <h1 class="gname">JustFall.lol</h1>
+            </div>
+        </a>
+        <a href="projects/just-one-boss/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/just-one-boss/pv1Gr5.png" alt="icon" />
+                <h1 class="gname">Just One Boss</h1>
+            </div>
+        </a>
+        <a href="projects/kittencannon/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/kittencannon/kittencannon.png" alt="icon" />
+                <h1 class="gname">Kitten Cannon</h1>
+            </div>
+        </a>
+        <a href="projects/krunker/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/krunker/img/krunker-io.jpg" alt="icon" />
+                <h1 class="gname">Krunker</h1>
+            </div>
+        </a>
+        <a href="projects/learntofly/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/learntofly/learntofly.png" alt="icon" />
+                <h1 class="gname">Learn To Fly</h1>
+            </div>
+        </a>
+        <a href="projects/learntofly2/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/learntofly2/learntofly2.png" alt="icon" />
+                <h1 class="gname">Learn To Fly 2</h1>
+            </div>
+        </a>
+        <a href="projects/letsbubbleit/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/letsbubbleit/image_2023-02-12_113701130.png" alt="icon" />
+                <h1 class="gname">Let's Bubble It</h1>
+            </div>
+        </a>
+        <a href="projects/bypass/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/bypass/bypass.png" alt="icon" />
+                <h1 class="gname">Linkvertise Bypass</h1>
+            </div>
+        </a>
+        <a href="projects/listentome/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/listentome/splash.png" alt="icon" />
+                <h1 class="gname">Listen To Me</h1>
+            </div>
+        </a>
+        <a href="projects/marvinspectrum/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/marvinspectrum/marvinspectrum.png" alt="icon" />
+                <h1 class="gname">Marvin's Spectrum</h1>
+            </div>
+        </a>
+        <a href="projects/matrixrampage/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/matrixrampage/image_2023-02-12_093426400.png" alt="icon" />
+                <h1 class="gname">Matrix Rampage</h1>
+            </div>
+        </a>
+        <a href="projects/merge-round-racers/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/merge-round-racers/splash.png" alt="icon" />
+                <h1 class="gname">Merge Racers</h1>
+            </div>
+        </a>
+        <a href="projects/meme2048/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/meme2048/img/rickroll.gif" alt="icon" />
+                <h1 class="gname">Meme 2048</h1>
+            </div>
+        </a>
+        <a href="projects/minesweeper/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/minesweeper/img/minesweeper.png" alt="icon" />
+                <h1 class="gname">Minesweeper</h1>
+            </div>
+        </a>
+        <a href="projects/mc-classic/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/mc-classic/pack.png" alt="icon" />
+                <h1 class="gname">Minecraft Classic</h1>
+            </div>
+        </a>
+        <a href="projects/missiles/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/missiles/miss.png" alt="icon" />
+                <h1 class="gname">Missiles</h1>
+            </div>
+        </a>
+        <a href="projects/motox3m/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/motox3m/splash.jpg" alt="icon" />
+                <h1 class="gname">MotoX3M</h1>
+            </div>
+        </a>
+        <a href="projects/motox3m-pool/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/motox3m-pool/splash.jpg" alt="icon" />
+                <h1 class="gname">MotoX3M Pool</h1>
+            </div>
+        </a>
+        <a href="projects/motox3m-spooky/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/motox3m-spooky/splash.jpeg" alt="icon" />
+                <h1 class="gname">MotoX3M Spooky</h1>
+            </div>
+        </a>
+        <a href="projects/motox3m-winter/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/motox3m-winter/download.jpeg" alt="icon" />
+                <h1 class="gname">MotoX3M Winter</h1>
+            </div>
+        </a>
+        <a href="projects/multitask2048/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/multitask2048/splash.png" alt="icon" />
+                <h1 class="gname">Multi-Task 2048</h1>
+            </div>
+        </a>
+        <a href="projects/noob-steve-parkour/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/noob-steve-parkour/512x512.jpg" alt="icon" />
+                <h1 class="gname">Noob Steve Parkour</h1>
+            </div>
+        </a>
+        <a href="projects/n-gon/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/n-gon/bot.png" alt="icon" />
+                <h1 class="gname">N-Gon</h1>
+            </div>
+        </a>
+        <a href="projects/ninja/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/ninja/logo1.png" alt="icon" />
+                <h1 class="gname">Ninja</h1>
+            </div>
+        </a>
+        <a href="projects/nitrogen/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/nitrogen/nitro.png" alt="icon" />
+                <h1 class="gname">Nitro Generator</h1>
+            </div>
+        </a>
+        <a href="projects/ns-shaft/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/ns-shaft/favicon.png" alt="icon" />
+                <h1 class="gname">NS-Shaft</h1>
+            </div>
+        </a>
+        <a href="projects/OfflineParadise/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/OfflineParadise/assets/icon.jpeg" alt="icon" />
+                <h1 class="gname">Offline Paradise</h1>
+            </div>
+        </a>
+        <a href="projects/pacman/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/pacman/pacman.png" alt="icon" />
+                <h1 class="gname">PacMan</h1>
+            </div>
+        </a>
+        <a href="projects/pandemic2/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/pandemic2/pandemic2.png" alt="icon" />
+                <h1 class="gname">Pandemic 2</h1>
+            </div>
+        </a>
+        <a href="projects/papasburgeria/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/papasburgeria/splash.jpg" alt="icon" />
+                <h1 class="gname">Papa's Burgeria</h1>
+            </div>
+        </a>
+        <a href="projects/papaspizzaria/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/papaspizzaria/papaspizzaria.jpg" alt="icon" />
+                <h1 class="gname">Papa's Pizzaria</h1>
+            </div>
+        </a>
+        <a href="projects/paperio2/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/paperio2/paper2.jpg" alt="icon" />
+                <h1 class="gname">Paper.io 2</h1>
+            </div>
+        </a>
+        <a href="projects/papery-planes/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/papery-planes/splash.jpg" alt="icon" />
+                <h1 class="gname">Papery Planes</h1>
+            </div>
+        </a>
+        <a href="projects/particle-clicker/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/particle-clicker/assets/mobile/original.png" alt="icon" />
+                <h1 class="gname">Particle Clicker</h1>
+            </div>
+        </a>
+        <a href="projects/polybranch/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/polybranch/img/pic1.png" alt="icon" />
+                <h1 class="gname">PolyBranch</h1>
+            </div>
+        </a>
+        <a href="projects/popcat-classic/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/popcat-classic/popcat.gif" alt="icon" />
+                <h1 class="gname">Popcat Clicker</h1>
+            </div>
+        </a>
+        <a href="projects/phub/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/phub/image_2023-02-08_173118117.png" alt="icon" />
+                <h1 class="gname">PxrnHub</h1>
+            </div>
+        </a>
+        <a href="projects/portalflash/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/portalflash/portaltheflashversion.jpg" alt="icon" />
+                <h1 class="gname">Portal (Flash)</h1>
+            </div>
+        </a>
+        <a href="projects/precision-client/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/precision-client/logo.png" alt="icon" />
+                <h1 class="gname">Precision Client</h1>
+            </div>
+        </a>
+        <a href="projects/protektor/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/protektor/icon-256.png" alt="icon" />
+                <h1 class="gname">Protektor</h1>
+            </div>
+        </a>
+        <a href="projects/push-the-square/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/push-the-square/img/splash.png" alt="icon" />
+                <h1 class="gname">Push The Square</h1>
+            </div>
+        </a>
+        <a href="projects/push-your-luck/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/push-your-luck/assets/img/push.png" alt="icon" />
+                <h1 class="gname">Push Your Luck</h1>
+            </div>
+        </a>
+        <a href="projects/rabbitsamurai/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/rabbitsamurai/splash.png" alt="icon" />
+                <h1 class="gname">Rabbit Samurai</h1>
+            </div>
+        </a>
+        <a href="projects/rabbitsamurai2/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/rabbitsamurai2/splash.png" alt="icon" />
+                <h1 class="gname">Rabbit Samurai 2</h1>
+            </div>
+        </a>
+        <a href="projects/retro-bowl/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/retro-bowl/img/icon.jpg" alt="icon" />
+                <h1 class="gname">Retro Bowl</h1>
+            </div>
+        </a>
+        <a href="projects/riddleschool/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/riddleschool/riddleschool.png" alt="icon" />
+                <h1 class="gname">Riddle School 1</h1>
+            </div>
+        </a>
+        <a href="projects/riddleschool2/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/riddleschool2/riddleschool2.png" alt="icon" />
+                <h1 class="gname">Riddle School 2</h1>
+            </div>
+        </a>
+        <a href="projects/riddleschool3/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/riddleschool3/riddleschool3.png" alt="icon" />
+                <h1 class="gname">Riddle School 3</h1>
+            </div>
+        </a>
+        <a href="projects/riddleschool4/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/riddleschool4/riddleschool4.png" alt="icon" />
+                <h1 class="gname">Riddle School 4</h1>
+            </div>
+        </a>
+        <a href="projects/riddleschool5/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/riddleschool5/riddleschool5.png" alt="icon" />
+                <h1 class="gname">Riddle School 5</h1>
+            </div>
+        </a>
+        <a href="projects/rocket-soccer/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/rocket-soccer/splash.png" alt="icon" />
+                <h1 class="gname">Rocket Soccer</h1>
+            </div>
+        </a>
+        <a href="projects/rolly-vortex/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/rolly-vortex/icon-256.png" alt="icon" />
+                <h1 class="gname">Rolly Vortex</h1>
+            </div>
+        </a>
+        <a href="projects/rooftop-snipers/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/rooftop-snipers/img/preview.png" alt="icon" />
+                <h1 class="gname">Rooftop Snipers</h1>
+            </div>
+        </a>
+        <a href="projects/subway-surfers-ny/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/subway-surfers-ny/NewYorkIcon.png" alt="icon" />
+                <h1 class="gname">Subway Surfers <br />
+                </h1>
+            </div>
+        </a>
+        <a href="projects/shellshockers/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/shellshockers/shellshock.png" alt="icon" />
+                <h1 class="gname">Shell Shockers</h1>
+            </div>
+        </a>
+        <a href="projects/shuttledeck/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/shuttledeck/splash.png" alt="icon" />
+                <h1 class="gname">Shuttledeck</h1>
+            </div>
+        </a>
+        <a href="projects/slope/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/slope/slope4.jpeg" alt="icon" />
+                <h1 class="gname">Slope</h1>
+            </div>
+        </a>
+        <a href="projects/slope-2/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/slope-2/slope-2-logo.png" alt="icon" />
+                <h1 class="gname">Slope 2</h1>
+            </div>
+        </a>
+        <a href="projects/slotchicken/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/slotchicken/image_2023-02-15_175158490.png" alt="icon" />
+                <h1 class="gname">Slot Chicken</h1>
+            </div>
+        </a>
+        <a href="projects/sm64/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/sm64/logo.png" alt="icon" />
+                <h1 class="gname">Super Mario</h1>
+            </div>
+        </a>
+        <a href="projects/smashkarts/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/smashkarts/images/icon-512.png" alt="icon" />
+                <h1 class="gname">Smash Carts</h1>
+            </div>
+        </a>
+        <a href="projects/smokingbarrels/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/smokingbarrels/smokingbarrels.jpg" alt="icon" />
+                <h1 class="gname">Smoking Barrels</h1>
+            </div>
+        </a>
+        <a href="projects/snowbattle/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/snowbattle/img/logo.png" alt="icon" />
+                <h1 class="gname">Snowbattle</h1>
+            </div>
+        </a>
+        <a href="projects/solitaire/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/solitaire/screen-shot.png" alt="icon" />
+                <h1 class="gname">Solitare</h1>
+            </div>
+        </a>
+
+        <a href="projects/sort-the-court/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/sort-the-court/img/splash.png" alt="icon" />
+                <h1 class="gname">Sort The Court</h1>
+            </div>
+        </a>
+        <a href="projects/stack/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/stack/stack.png" alt="icon" />
+                <h1 class="gname">Stack</h1>
+            </div>
+        </a>
+        <a href="projects/stack-bump-3d/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/stack-bump-3d/thumbnail.jpg" alt="icon" />
+                <h1 class="gname">Stack Bump 3D</h1>
+            </div>
+        </a>
+        <a href="projects/station-141/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/station-141/75wxYs.png" alt="icon" />
+                <h1 class="gname">Station 141</h1>
+            </div>
+        </a>
+        <a href="projects/stealingthediamond/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/stealingthediamond/stealingthediamond.jpg" alt="icon" />
+                <h1 class="gname">Stealing The Diamond</h1>
+            </div>
+        </a>
+        <a href="projects/stickwar/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/stickwar/stickwar.jpg" alt="icon" />
+                <h1 class="gname">Stick War</h1>
+            </div>
+        </a>
+        <a href="projects/escapingtheprison/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="/projects/escapingtheprison/escapingtheprison.jpg" alt="icon" />
+                <h1 class="gname">Stickman Escape</h1>
+            </div>
+        </a>
+        <a href="projects/Stickman-Survival/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/Stickman-Survival/Icon.png" alt="icon" />
+                <h1 class="gname">Stickman Survival</h1>
+            </div>
+        </a>
+        <a href="projects/stickman-hook/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/stickman-hook/unnamed.jpg" alt="icon" />
+                <h1 class="gname">Stickman Hook</h1>
+            </div>
+        </a>
+        <a href="projects/stormthehouse2/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/stormthehouse2/stormthehouse2.jpg" alt="icon" />
+                <h1 class="gname">Storm The House 2</h1>
+            </div>
+        </a>
+        <a href="projects/sushi-unroll/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/sushi-unroll/favicon.png" alt="icon" />
+                <h1 class="gname">Sushi Unroll</h1>
+            </div>
+        </a>
+        <a href="projects/swerve/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/swerve/img/favicon.jpg" alt="icon" />
+                <h1 class="gname">Swerve</h1>
+            </div>
+        </a>
+        <a href="projects/temple-run-2/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/temple-run-2/img/og-icon.png" alt="icon" />
+                <h1 class="gname"> Temple Run 2 <br />
+                    <span class="badge">
+              <i class="fa-solid fa-fire"></i> Hot </span>
+                </h1>
+            </div>
+        </a>
+        <a href="projects/the-hotel/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/the-hotel/splash.png" alt="icon" />
+                <h1 class="gname">The Hotel</h1>
+            </div>
+        </a>
+        <a href="projects/tinyfishing/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/tinyfishing/tiny-fishing.png" alt="icon" />
+                <h1 class="gname">Tiny Fishing</h1>
+            </div>
+        </a>
+        <a href="projects/tacticalassasin2/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/tacticalassasin2/tacticalassassin2.png" alt="icon" />
+                <h1 class="gname">Tactical Assassin 2</h1>
+            </div>
+        </a>
+        <a href="projects/tanuki-sunset/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/tanuki-sunset/img/cover.png" alt="icon" />
+                <h1 class="gname">Tanuki Sunset</h1>
+            </div>
+        </a>
+        <a href="projects/thebattle/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/thebattle/thebattle.png" alt="icon" />
+                <h1 class="gname">The Battle</h1>
+            </div>
+        </a>
+        <a href="projects/the-final-earth/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/the-final-earth/images.png" alt="icon" />
+                <h1 class="gname">The Final Earth</h1>
+            </div>
+        </a>
+        <a href="projects/theheist/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/theheist/theheist.jpg" alt="icon" />
+                <h1 class="gname">The Heist</h1>
+            </div>
+        </a>
+        <a href="projects/thisistheonlylevel/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/thisistheonlylevel/thisistheonlylevel.png" alt="icon" />
+                <h1 class="gname">This Is The Only Level</h1>
+            </div>
+        </a>
+        <a href="projects/tosstheturtle/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/tosstheturtle/tosstheturtle.png" alt="icon" />
+                <h1 class="gname">Toss The Turtle</h1>
+            </div>
+        </a>
+        <a href="projects/trashndash/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/trashndash/image_2023-02-12_113908637.png" alt="icon" />
+                <h1 class="gname">Trash N' Dash</h1>
+            </div>
+        </a>
+        <a href="projects/tube-jumpers/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/tube-jumpers/img/shark.jpg" alt="icon" />
+                <h1 class="gname">Tube Jumpers</h1>
+            </div>
+        </a>
+        <a href="projects/tunnel-rush/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/tunnel-rush/img/tunnel.jpg" alt="icon" />
+                <h1 class="gname">Tunnel Rush</h1>
+            </div>
+        </a>
+        <a href="projects/tv-static/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/tv-static/static.png" alt="icon" />
+                <h1 class="gname">TV Static</h1>
+            </div>
+        </a>
+        <a href="projects/underrun/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/underrun/underrun.png" alt="icon" />
+                <h1 class="gname">Underrun Shooter</h1>
+            </div>
+        </a>
+        <a href="projects/veloce/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/veloce/qN6zkD.png" alt="icon" />
+                <h1 class="gname">Veloce</h1>
+            </div>
+        </a>
+        <a href="projects/wordle/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/wordle/img/logo_512x512.png" alt="icon" />
+                <h1 class="gname">Wordle</h1>
+            </div>
+        </a>
+        <a href="projects/worlds-hardest-game/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/worlds-hardest-game/images/splash.jpg" alt="icon" />
+                <h1 class="gname">World's Hardest Game</h1>
+            </div>
+        </a>
+        <a href="projects/weavesilk/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/weavesilk/thumb.png" alt="icon" />
+                <h1 class="gname">Weave Silk</h1>
+            </div>
+        </a>
+        <a href="projects/webgl-fluid-simulation/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/webgl-fluid-simulation/logo.png" alt="icon" />
+                <h1 class="gname">WebGL Fluid Sim</h1>
+            </div>
+        </a>
+        <a href="projects/you-are-bezos/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/you-are-bezos/img/banner.png" alt="icon" />
+                <h1 class="gname">You Are Jeff Bezos</h1>
+            </div>
+        </a>
+        <a href="projects/zombs-royale/index.html" class="glink container">
+            <div class="gapp">
+                <img class="gicon" src="projects/zombs-royale/zomb.png" alt="icon" />
+                <h1 class="gname">Zombs Royale</h1>
+            </div>
+        </a>
+    </div>
+    <p style="font-size: 25px;" class="text-center"> Is there a glitch? <br />
+        <span style="font-size: 18px;">Then tell me!</span>
+    </p>
+    <script type="text/javascript">
+        alert("Have a Nice Day!");
+    </script>
+    <br>
+    <hr>
+    <br>
+    <p>
+        <b>Creator of GxmesUniverse</b> | Copyright © 2021-2023
+    </p>
+</body>
+
+</html>
